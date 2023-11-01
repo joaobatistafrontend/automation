@@ -43,7 +43,9 @@ def usuario():
           maquina.say(resultado)
           maquina.runAndWait()
      elif 'toque' in comando:
+          print('vou procurar')
           musica = comando.replace('toque', 'toque')
+          print('procurando')
           resultado = pywhatkit.playonyt(musica)
           maquina.say('tocando musica')
           maquina.runAndWait()
